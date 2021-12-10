@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import CommentForm from "../../components/CommentForm/CommentForm";
 import ApiCall from "../ApiCall/Map-api-call";
@@ -117,7 +118,7 @@ const TicketView = (props) => {
                   </h5>
                 </figure>
               </div>
-            )}
+            )} 
           </>
           :
           <h4>no comments...</h4>

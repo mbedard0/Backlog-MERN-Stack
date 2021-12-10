@@ -117,7 +117,7 @@ const App = () => {
 				<Route path ="/tickets" element={<AllTickets ticket={allTickets}/>}/>
 				<Route path='/myWork' element={<MyWork profile={profile} />} />
 				<Route path='/addTicket' element={<AddTicket handleSubmitTicket={handleSubmitTicket} profile={profile} allProfiles={allProfiles}/>} />
-				<Route path='/ticketDetails' element={<TicketView user={user} handleDeleteTicket={handleDeleteTicket} handleAddComment= {handleAddComment} />} />
+				<Route path='/ticketDetails' element={<TicketView user={user} handleDeleteTicket={handleDeleteTicket} handleAddComment= {handleAddComment} tickets={tickets} />} />
 				<Route path="/editTicket" element={<EditTicket handleUpdateTicket={handleUpdateTicket} allProfiles={allProfiles} user={user} profile={profile}/>} />
 				<Route path="/Search" element={<SearchTicket allTickets={allTickets}/>}/>
 				<Route path="/viewUser" element={<UserView allProfiles={allProfiles}/>}/>
